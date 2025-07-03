@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components"
+import { breakpoints } from "../../../../styles/global"
 
 export const PaymentMethodContainer = styled.div`
     input {
@@ -17,6 +18,10 @@ export const PaymentMethodContainer = styled.div`
                 background: ${theme.colors["base-hover"]};
             }
         `}
+    }
+
+    @media (max-width: ${breakpoints.tablet}) {
+        padding-bottom: 0px;
     }
 `
 

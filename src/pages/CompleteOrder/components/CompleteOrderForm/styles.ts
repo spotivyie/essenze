@@ -21,6 +21,10 @@ export const CompleteOrderFormContainer = styled.div`
 export const FormSectionContainer = styled(SectionBaseStyle)`
     display: flex;
     flex-direction: column;
+
+    @media (max-width: ${breakpoints.tablet}){
+        padding-top:20px;
+    }
 `
 
 export const AddressFormContainer = styled.div`

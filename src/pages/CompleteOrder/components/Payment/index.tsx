@@ -56,7 +56,7 @@ export function Payment() {
         <>
             {/* Campos de Cartão (Débito ou Crédito) */}
             {isCard && (
-                <>
+                <S.Card>
                 <S.Row>
                     <S.InputGroup>
                         <Input
@@ -159,12 +159,12 @@ export function Payment() {
                         </S.InputGroup>
                     </S.Row>
                 )}
-                </>
+                </S.Card>
             )}
 
             {/* Campos de Boleto */}
             {paymentMethod === "boleto" && (
-                <>
+                <S.Card>
                     <S.Row>
                         <S.InputGroup>
                             <Input
@@ -184,7 +184,7 @@ export function Payment() {
                             <p>O boleto será gerado após a finalização do pedido. Você poderá pagá-lo até a data de vencimento informada.</p>
                         </S.InputGroup>
                     </S.Row>
-                </>
+                </S.Card>
             )}
         </>
     )

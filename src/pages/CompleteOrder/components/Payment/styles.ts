@@ -1,6 +1,12 @@
 import styled from "styled-components"
 import { breakpoints } from "../../../../styles/global"
 
+export const Card = styled.div`
+    @media (max-width: ${breakpoints.tablet}) {
+        padding-top: 20px;
+    }
+`
+
 export const Row = styled.div`
     display: flex;
     column-gap: 14px;
@@ -8,6 +14,8 @@ export const Row = styled.div`
 
     @media (max-width: ${breakpoints.tablet}) {
         display: block;
+        padding-top: 0px;
+        padding-bottom: 0px;
     }
 `
 
